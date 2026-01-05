@@ -141,8 +141,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 📞 Contact
 
 - **Email**: mehedihasan.codes3@gmail.com
-- **GitHub**: [Your GitHub Profile]
-- **LinkedIn**: [Your LinkedIn Profile]
+- **LinkedIn**: [https://www.linkedin.com/in/mehedi-hasan-c3/]
 
 ---
 
