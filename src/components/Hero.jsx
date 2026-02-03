@@ -21,13 +21,13 @@ const Hero = () => {
       })
 
       // Code brackets animation
-      gsap.fromTo('.code-bracket', 
+      gsap.fromTo('.code-bracket',
         { opacity: 0, scale: 0.8 },
         { opacity: 1, scale: 1, duration: 1, ease: 'back.out(1.7)', stagger: 0.2, delay: 0.8 }
       )
 
       // Title animation
-      gsap.fromTo(titleRef.current, 
+      gsap.fromTo(titleRef.current,
         { y: 60, opacity: 0 },
         { y: 0, opacity: 1, duration: 1, ease: 'power3.out', delay: 0.3 }
       )
@@ -77,9 +77,9 @@ const Hero = () => {
             <item.icon className="w-8 h-8" />
           </motion.div>
         ))}
-        
+
         {/* Code Grid Pattern */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage: `
@@ -89,7 +89,7 @@ const Hero = () => {
             backgroundSize: '40px 40px'
           }}
         />
-        
+
         {/* Subtle Glow Effects */}
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl" />
@@ -115,18 +115,18 @@ const Hero = () => {
           <div className="mb-4">
             <span className="text-primary/80 font-mono text-lg">const developer = &#123;</span>
           </div>
-          
+
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
             Mehedi Hasan Emon
           </h1>
-          
+
           <div className="font-mono text-lg md:text-xl text-slate-300 mb-4">
             <span className="text-primary/80">role:</span> <span className="text-green-400">"MERN-Stack Developer"</span>,<br />
             <span className="text-primary/80">specialization:</span> <span className="text-yellow-400">"REACT & SEO"</span>,<br />
             <span className="text-primary/80">passion:</span> <span className="text-blue-400">"Building Amazing Web Apps"</span>
             <span className="cursor text-white">|</span>
           </div>
-          
+
           <div className="mb-6">
             <span className="text-primary/80 font-mono text-lg">&#125;</span>
           </div>
@@ -159,7 +159,7 @@ const Hero = () => {
           transition={{ delay: 0.8 }}
           className="text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Crafting scalable web applications with clean code and modern technologies. 
+          Crafting scalable web applications with clean code and modern technologies.
           Specialized in React ecosystem and e-commerce optimization.
         </motion.p>
 
@@ -170,8 +170,8 @@ const Hero = () => {
           transition={{ delay: 1 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
         >
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="group bg-primary hover:bg-primary/90 text-white px-8 py-3 text-base font-semibold shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all cursor-pointer"
             onClick={() => {
               const projectsSection = document.getElementById('projects')
@@ -184,23 +184,28 @@ const Hero = () => {
             View My Code
             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
           </Button>
-          
-          <Button 
-            variant="outline" 
-            size="lg" 
+
+          <Button
+            variant="outline"
+            size="lg"
             className="border-white/20 text-white hover:bg-white/10 hover:border-white/30 px-8 py-3 text-base font-semibold backdrop-blur-sm cursor-pointer hover:shadow-lg hover:shadow-primary/25 transition-all"
             onClick={() => {
-              // Placeholder for resume download - functionality to be added later
-              console.log('Resume download clicked - functionality coming soon!')
+              // Create a temporary link element to trigger download
+              const link = document.createElement('a')
+              link.href = '/mehedi_resume.pdf'
+              link.download = 'Mehedi_Hasan_Emon_Resume.pdf'
+              document.body.appendChild(link)
+              link.click()
+              document.body.removeChild(link)
             }}
           >
             <Download className="mr-2 h-5 w-5" />
             Download Resume
           </Button>
-          
-          <Button 
-            variant="outline" 
-            size="lg" 
+
+          <Button
+            variant="outline"
+            size="lg"
             className="border-white/20 text-white hover:bg-white/10 hover:border-white/30 px-8 py-3 text-base font-semibold backdrop-blur-sm cursor-pointer"
             onClick={() => {
               const contactSection = document.getElementById('contact')

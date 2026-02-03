@@ -105,7 +105,7 @@ const About = () => {
         {/* Main Content */}
         <Card className="bg-white/5 border-white/10 backdrop-blur-md relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-          
+
           <CardContent className="p-6 md:p-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
               {/* Profile Image Column */}
@@ -120,7 +120,7 @@ const About = () => {
                     alt="Portrait of Mehedi Hasan Emon"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  
+
                   {/* Status Card */}
                   <div className="absolute bottom-4 left-4 right-4 z-20">
                     <Card className="bg-white/10 border-white/20 backdrop-blur-md">
@@ -132,9 +132,9 @@ const About = () => {
                             Available for work
                           </p>
                         </div>
-                        <Button 
-                          size="icon" 
-                          variant="ghost" 
+                        <Button
+                          size="icon"
+                          variant="ghost"
                           className="h-8 w-8 rounded-full bg-white/10 hover:bg-primary hover:text-white cursor-pointer"
                           onClick={() => {
                             const contactSection = document.getElementById('contact')
@@ -249,8 +249,8 @@ const About = () => {
                         </Badge>
                       </div>
                       <p className="text-slate-400 text-sm">
-                        Comprehensive study in software development, algorithms, data structures, system design, 
-                        and computer science fundamentals. Built strong analytical and problem-solving skills 
+                        Comprehensive study in software development, algorithms, data structures, system design,
+                        and computer science fundamentals. Built strong analytical and problem-solving skills
                         that form the foundation of my development approach.
                       </p>
                     </CardContent>
@@ -260,17 +260,17 @@ const About = () => {
                 {/* CTA Button */}
                 <div className="about-item pt-4">
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <Button 
+                    <Button
                       variant="outline"
                       className="border-white/20 text-white hover:bg-white/10 hover:border-white/30 cursor-pointer"
                       onClick={() => {
-                        window.open('/resume', '_blank')
+                        window.open('/mehedi_resume.pdf', '_blank')
                       }}
                     >
                       <Code className="mr-2 h-4 w-4" />
                       View Resume
                     </Button>
-                    <Button 
+                    <Button
                       variant="outline"
                       className="border-white/20 text-white hover:bg-white/10 hover:border-white/30 cursor-pointer"
                       onClick={() => {
