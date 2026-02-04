@@ -191,13 +191,16 @@ const Navigation = () => {
 
             {/* Mobile Actions */}
             <div className="pt-4 border-t border-white/10 space-y-3">
-              {/* Resume Button */}
-              <motion.a
-                href="/mehedi_resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              {/* Hire Me Button */}
+              <motion.button
                 className="group w-full flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-primary/20 to-blue-500/20 hover:from-primary/30 hover:to-blue-500/30 border border-primary/30 rounded-xl backdrop-blur-sm transition-all duration-300"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false)
+                  const contactSection = document.getElementById('contact')
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' })
+                  }
+                }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
@@ -212,13 +215,13 @@ const Navigation = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                   />
                 </svg>
                 <span className="text-base font-medium text-slate-300 group-hover:text-white transition-colors duration-300">
-                  Resume
+                  Hire Me
                 </span>
-              </motion.a>
+              </motion.button>
 
               {/* Social Links */}
               <div className="flex gap-3">

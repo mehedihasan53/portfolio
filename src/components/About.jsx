@@ -116,7 +116,7 @@ const About = () => {
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent z-10" />
                   <img
-                    src="https://i.ibb.co.com/pB6jcchy/profile.avif"
+                    src="/mehedi-profile.png"
                     alt="Portrait of Mehedi Hasan Emon"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
