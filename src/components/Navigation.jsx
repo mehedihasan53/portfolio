@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { Menu, X, Github, Mail, Sun, Moon } from 'lucide-react'
-import { useTheme } from '../contexts/ThemeContext'
+import { Menu, X, Github, Mail } from 'lucide-react'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)

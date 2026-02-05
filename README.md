@@ -2,7 +2,7 @@
 
 A hyper-realistic 3D portfolio website featuring futuristic design, advanced animations, and cutting-edge web technologies. Built with React and modern CSS techniques to create an immersive, cinematic user experience.
 
-## ✨ Features
+## ✨ Feature
 
 ### 🎨 **Hyper-Realistic 3D Design**
 - **Futuristic Tech Aesthetic**: Deep charcoal and midnight black theme with electric cyan and neon blue accents
