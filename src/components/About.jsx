@@ -260,16 +260,20 @@ const About = () => {
                 {/* CTA Button */}
                 <div className="about-item pt-4">
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <Button
-                      variant="outline"
-                      className="border-white/20 text-white hover:bg-white/10 hover:border-white/30 cursor-pointer"
-                      onClick={() => {
-                        window.open('/mehedi_resume.pdf', '_blank')
-                      }}
+                    <a
+                      href="/Mehedi_Hasan_FullStack_Resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block"
                     >
-                      <Code className="mr-2 h-4 w-4" />
-                      View Resume
-                    </Button>
+                      <Button
+                        variant="outline"
+                        className="border-white/20 text-white hover:bg-white/10 hover:border-white/30 cursor-pointer"
+                      >
+                        <Code className="mr-2 h-4 w-4" />
+                        View Resume
+                      </Button>
+                    </a>
                     <Button
                       variant="outline"
                       className="border-white/20 text-white hover:bg-white/10 hover:border-white/30 cursor-pointer"

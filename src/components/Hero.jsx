@@ -306,21 +306,19 @@ const Hero = () => {
                 whileHover={{ x: 4 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
               >
-                <Button
-                  variant="ghost"
-                  className="text-slate-400 hover:text-white hover:bg-white/[0.05] p-0 h-auto font-medium transition-all duration-300 group"
-                  onClick={() => {
-                    const link = document.createElement('a')
-                    link.href = '/mehedi_resume.pdf'
-                    link.download = 'Mehedi_Hasan_Emon_Resume.pdf'
-                    document.body.appendChild(link)
-                    link.click()
-                    document.body.removeChild(link)
-                  }}
+                <a
+                  href="/Mehedi_Hasan_FullStack_Resume.pdf"
+                  download="Mehedi_Hasan_FullStack_Resume.pdf"
+                  className="inline-block"
                 >
-                  <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-[-1px]" />
-                  Download Resume
-                </Button>
+                  <Button
+                    variant="ghost"
+                    className="text-slate-400 hover:text-white hover:bg-white/[0.05] p-0 h-auto font-medium transition-all duration-300 group"
+                  >
+                    <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-[-1px]" />
+                    Download Resume
+                  </Button>
+                </a>
               </motion.div>
             </motion.div>
           </div>
