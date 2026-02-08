@@ -232,31 +232,6 @@ const About = () => {
                   </div>
                 </div>
 
-                {/* Education */}
-                <div className="about-item">
-                  <h4 className="text-sm font-semibold text-slate-300 uppercase tracking-wider mb-4">
-                    Education
-                  </h4>
-                  <Card className="bg-white/5 border-white/10 border-l-2 border-l-primary">
-                    <CardContent className="p-4">
-                      <div className="flex items-start justify-between mb-2">
-                        <div>
-                          <h5 className="text-lg font-semibold text-white">Bachelor of Science in Computer Science and Engineering</h5>
-                          <p className="text-primary font-medium">City University</p>
-                        </div>
-                        <Badge variant="skill" className="text-xs">
-                          Graduate
-                        </Badge>
-                      </div>
-                      <p className="text-slate-400 text-sm">
-                        Comprehensive study in software development, algorithms, data structures, system design,
-                        and computer science fundamentals. Built strong analytical and problem-solving skills
-                        that form the foundation of my development approach.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-
                 {/* CTA Button */}
                 <div className="about-item pt-4">
                   <div className="flex flex-col sm:flex-row gap-3">
